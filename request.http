@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "name":"Santiago",
-  "lastname":"OcaGalvismpo",
+  "lastname":"Galvis",
   "age": "20",
   "address":{
     "city":"Manizales",
@@ -24,7 +24,7 @@ Content-Type: application/json
 
 {
   "name":"Santiago 2",
-  "lastname":"OcaGalvis 2mpo",
+  "lastname":"Galvis 2",
   "age": "20",
   "address":{
     "city":"Bogota",
