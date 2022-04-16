@@ -14,7 +14,7 @@ function sendEmailConfimationHTML(customerName, orderNro){
   <body>
       <div class="container section">
           <label>Black Friday</label>
-          <img src="https://ibb.co/Dg6YXm9">
+          <img src="https://asset1.zankyou.com/images/mag-post/816/336b/685//-/co/wp-content/uploads/2017/05/Ca%C3%B1o-Cristales-Kirill-Trubitsyn.jpg" width="400px">
       </div>
   </body>
   </html>`

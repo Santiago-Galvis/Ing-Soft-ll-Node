@@ -9,7 +9,7 @@ const email = require('./email');
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-// Enviar Mensaje Whatsapp - Twilio
+// Enviar Mensaje Twilio
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
@@ -101,3 +101,25 @@ async () => {
   console.log('Enviando correo electrónico');
   await sendEmail();
 };
+
+
+client.messages
+  .create({
+    body: 'Prueba de Twilio por WhatsApp. Grupo Ing de Software miercoles en la mañana',
+    from: 'whatsapp:+14155238886',
+    to: 'whatsapp:+573105958276',
+  })
+  .then((message) =>
+    console.log(`Mensaje Enviado por WhatsApp ${message.sid}`)
+  );
+
+  // Enviar Mensaje Whatsapp
+  client.messages
+  .create({
+    body: 'Prueba de Twilio por WhatsApp',
+    from: 'whatsapp:+14155238886',
+    to: 'whatsapp:+573117702079',
+  })
+  .then((message) =>
+    console.log(`Mensaje Enviado por WhatsApp ${message.sid}`)
+  );
