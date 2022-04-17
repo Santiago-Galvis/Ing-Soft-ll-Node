@@ -103,22 +103,12 @@ async () => {
 };
 
 
-client.messages
-  .create({
-    body: 'Prueba de Twilio por WhatsApp. Grupo Ing de Software miercoles en la mañana',
-    from: 'whatsapp:+14155238886',
-    to: 'whatsapp:+573105958276',
-  })
-  .then((message) =>
-    console.log(`Mensaje Enviado por WhatsApp ${message.sid}`)
-  );
-
   // Enviar Mensaje Whatsapp
   client.messages
   .create({
     body: 'Prueba de Twilio por WhatsApp',
-    from: 'whatsapp:+14155238886',
-    to: 'whatsapp:+573117702079',
+    from: 'whatsapp:+',
+    to: 'whatsapp:+',
   })
   .then((message) =>
     console.log(`Mensaje Enviado por WhatsApp ${message.sid}`)
